@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="billingApp.css">
+    <title>Billing App</title>
+</head>
+<body>
+
+ <!--
+    1.Pjesa e Faktures
+    2.Detajet e Clientit
+    -->
+
+
+    <div class="contanier">
+        <h1>Billing App</h1>
+        <form id="billingForm">
+        
+        <label for="emriKonsumatorit">Konsumatori:</label>
+        <input type="text" id="emrikonsumatorit" required>
+        
+        <label for="shumaKonsumatorit">Shuma:</label>
+        <input type="number" id="shumaKonsumatorit" required>
+        
+        <button type="submit" onclick="billingForm()">Ruaj Konsumatorin</button>
+        </form>
+        
+        <h2>Detajet e Faturimit</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Emri Konsumatorit</th>
+                    <th>Shuma</th>
+                </tr>
+            </thead>
+        
+             <tbody id="billinglist"> 
+                <tr>
+                    <td>Olsa</td>
+                    <td>1500</td>
+                </tr>
+             </tbody>
+        
+        </table>
+        </div>
+
+
+        <script src="billingApp.js">
+
+
+        </script>
+        
+
+</body>
+</html>
